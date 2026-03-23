@@ -1,7 +1,7 @@
 function sortArray() {
 
 const numbers = []
-//gfwi
+
 
 
     for (let i = 0; i < 5; i++) {
