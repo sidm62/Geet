@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Restaurant-guide</title>
     <link rel="stylesheet" href="restaurant.css">
-    <script src = "restaurant.js"></script>
+    <script src="restaurant.js" defer></script>
 </head>
 <body>
+
 <header>
     <h1>Student Restaurant-guide</h1>
-    <p>Welcome to to the Student Restaurant-guide</p>
-    <article> Your daily companion for finding the best student meals across Finland universities.This application is designed to help students and staff navigate the wide variety
-        of campus dining options with ease. Whether you are looking for the cheapest lunch
-        or the most diverse menu, we’ve got you covered. </article>
+    <p>Welcome to the Student Restaurant-guide</p>
+    <article>
+        Your daily companion for finding the best student meals across Finland universities.
+        This application is designed to help students and staff navigate the wide variety
+        of campus dining options with ease.
+    </article>
 
-    <section id = "search-container">
-        <input type = "text" id = "search" placeholder = "Search for a restaurant or location">
+    <section id="search-container">
+        <input type="text" id="search" placeholder="Search for a restaurant or location">
     </section>
+</header> <main>
+    <div id="restaurant-list" class="grid container">
+    </div>
+</main>
 
-    <main>
-        <div id ="restaurant-list" class="grid container">
-
-        </div>
-    </main>
-</header>
-
+<dialog id="modal"></dialog>
 
 </body>
 </html>
