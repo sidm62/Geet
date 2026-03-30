@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metropolia Restaurants</title>
-    <link rel="stylesheet" href="t2.css">
-    <script src="Six.js" defer></script>
+
+    <script src="Six.js" type="module" defer></script>
 </head>
 <body>
 
-<h1>Restaurant Guide</h1>
+<header>
+    <h1>Restaurant Guide</h1>
+
+    <div id="filter-buttons">
+        <button id="fbtn">Sodexo</button>
+        <button id="copass">Compass Group</button>
+        <button id="allbtn">Show All</button>
+    </div>
+</header>
 
 <main>
     <table>
@@ -17,15 +25,15 @@
         <tr>
             <th>Name</th>
             <th>Address</th>
-            <th>City</th>
+            <th>Company</th>
         </tr>
         </thead>
-        <tbody id="target"></tbody>
+        <tbody id="target">
+        </tbody>
     </table>
 </main>
 
-<dialog id="modal">
-</dialog>
+<dialog id="modal"></dialog>
 
 </body>
 </html>

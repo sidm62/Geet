@@ -1,6 +1,6 @@
 import {url} from './url.js';
 import {fetchData} from './fetchData.js';
-import {restaurantRow} from './comp.js';
+import {restaurantRow, restaurantModal} from './comp.js';
 
 
 
@@ -24,7 +24,7 @@ const Table = (restaurants) => {
             modal.showModal();
 
             try {
-                const menuData = await fetchData(`${url}/restaurants/daily/${restaurant._id}`);
+                const menuData = await fetchData(`${url}/restaurants/daily/${restaurant._id}/fi`);
                 modal.innerHTML = restaurantModal(restaurant, menuData);
                 const close = modal.querySelector('#close-modal');
                 close.addEventListener('click', (e) => modal.close());
@@ -66,7 +66,7 @@ fbtn.addEventListener('click', (e) => {
 });
 
 copassBtn.addEventListener('click', (e) => {
-    const filtered = allRestaurants.filter(r => r.company === 'Compass');
+    const filtered = allRestaurants.filter(r => r.company === 'Compass Group');
     Table(filtered);
 });
 

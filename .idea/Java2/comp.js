@@ -1,18 +1,28 @@
 export const restaurantRow = (restaurant) => {
-    const { name, aderess } = restaurant;
+
+    const { name, address, company } = restaurant;
+
     const target = document.createElement('tr');
-    tr.innerHTML = `<td>${name}</td>
-    <td>${company}</td>`;
+
+
+    target.innerHTML = `
+        <td>${name}</td>
+        <td>${address}</td>
+        <td>${company}</td>`;
+
     return target;
 };
 
 export const restaurantModal = (restaurant, menu) => {
-    const {naem, adress, company} = restaurant;
-    const {course} = menu;
+
+    const { name, address, company } = restaurant;
+
+
+    const { courses } = menu;
 
     let menuHTML = `<ul>`;
-    if (course && course.length > 0) {
-        course.forEach(course => {
+    if (courses && courses.length > 0) {
+        courses.forEach(course => {
             menuHTML += `<li><strong>${course.name}</strong> - ${course.price || ''}</li>`;
         });
     } else {
@@ -22,7 +32,7 @@ export const restaurantModal = (restaurant, menu) => {
 
     return `
         <h3>${name}</h3>
-        <p><strong>Address:</strong> ${adress}</p>
+        <p><strong>Address:</strong> ${address}</p>
         <p><strong>Company:</strong> ${company}</p>
         <hr>
         <h4>Päivän menu</h4>
