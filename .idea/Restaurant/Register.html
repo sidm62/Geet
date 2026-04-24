@@ -5,36 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Restaurant-guide - Register</title>
   <link rel="stylesheet" href="restaurant.css">
-  <script src="main.js" type="module" defer></script>
+  <script src="register.js" type="module" defer></script>
 </head>
 <body>
 
 <header>
-  <h1>Student Restaurant-guide</h1>
-  <p>Your daily companion for finding the best student meals across Finnish universities.</p>
+  <h1>CAMPUS<span>EATS</span></h1>
+  <p>Päivittäinen kumppanisi parhaiden opiskelija-aterioiden löytämiseen Suomen yliopistoissa.</p>
 </header>
 
 <main>
   <section id="register-section">
-    <h2>Create an Account</h2>
-    <form id="register-form" action="restaurant.html" method="GET">
+    <h2>Luo uusi käyttäjätunnus</h2>
+    <form id="register-form">
       <div class="form-group">
-        <label for="register-username">Username</label>
-        <input type="text" id="register-username" name="username" required minlength="3">
-      </div>
-      <div class="form-group">
-        <label for="register-email">Email</label>
-        <input type="email" id="register-email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="register-password">Password</label>
-        <input type="password" id="register-password" name="password" required>
+        <label for="username">Käyttäjätunnus</label>
+        <input type="text" id="username" name="username" required minlength="3" placeholder="Valitse käyttäjänimi">
       </div>
 
-      <button type="submit" id="register-submit">Register</button>
+      <div class="form-group">
+        <label for="email">Sähköposti</label>
+        <input type="email" id="email" name="email" required placeholder="esimerkki@koulu.fi">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Salasana</label>
+        <input type="password" id="password" name="password" required placeholder="Luo vahva salasana">
+      </div>
+
+      <button type="submit" id="register-submit">Rekisteröidy</button>
     </form>
+
+    <p class="login-link">Onko sinulla jo tunnus? <a href="login.html">Kirjaudu sisään tästä</a>.</p>
   </section>
 </main>
 
+</body>
+</html>
 </body>
 </html>
