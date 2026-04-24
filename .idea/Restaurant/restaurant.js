@@ -89,7 +89,7 @@ const updateDistanceAndRoute = (userLa, userLo) => {
                 closestRestaurant = restaurant;
             }
         }
-    });
+    });//
 
     if (closestRestaurant) {
         closestRestaurant.isNearby = true;

@@ -4,4 +4,4 @@ export const fetchData = async (url, options) => {
         throw new Error(`HTTP error! status: ${resp.status}`);
     }
     return await resp.json();
-};
+};//

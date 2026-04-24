@@ -3,7 +3,7 @@ export const restaurantRow = (restaurant) => {
 
     const target = document.createElement('div');
     target.classList.add('restaurant-card');
-
+//
 
     if (isNearby) {
         target.classList.add('closest-highlight');
